@@ -7,23 +7,31 @@
   <style>
     body {
       margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #111;
+      text-align: center;
+      height: 90%;
+      background-color: rgb(194, 168, 127);
     }
     model-viewer {
+      height: 100vh; 
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto; 
       width: 80%;
       height: 80vh;
       background-color: #222;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    img {
+      width: 200px;
+      height: auto;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-
+  <img src="logo_unicv_colorida.png" alt="">
   <model-viewer 
     src="./modelo3d.glb"
     ar
@@ -33,6 +41,6 @@
     autoplay
     alt="Modelo 3D">
   </model-viewer>
-
+  <div><p>Feito com Carinho pela Fabrica de Conteudos</p></div>
 </body>
 </html>
